@@ -257,7 +257,7 @@
 				<posy>27</posy>
 				<width>80</width>
 				<height>72</height>
-				<texture>pictures2.png</texture>
+				<texture>navit_logo2.png</texture>
 			</control>
 			<control type="label">
 				<description>Waze label</description>
