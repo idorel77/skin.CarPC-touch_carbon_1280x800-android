@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<keymap>
+    <global>
+        <keyboard>
+            <R>XBMC.ReloadSkin()</F5>
+            <F6>Skin.ToggleSetting(DebugGrid)</F6>
+            <F7>Skin.ToggleSetting(DebugInfo)</F7>
+            <F8>Notification(Testing 123,Hello world)</F8>
+        </keyboard>
+    </global>
+</keymap> 
