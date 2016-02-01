@@ -512,7 +512,7 @@
                 <height>82</height>
                 <texturenofocus  border="4">floor_button_t.png</texturenofocus>
                 <texturefocus border="4">floor_buttonfo.png</texturefocus>
-                <onclick>KB_minus</onclick>
+                <onclick>VolumeDown</onclick>
             </control>
             <control type="label">
                 <posx>0</posx>
@@ -537,7 +537,7 @@
                 <height>82</height>
                 <texturenofocus  border="4">floor_button_t.png</texturenofocus>
                 <texturefocus border="4">floor_buttonfo.png</texturefocus>
-                <onclick>KB_plus</onclick>
+                <onclick>VolumeUp</onclick>
             </control>
             <control type="label">
                 <posx>100</posx>
