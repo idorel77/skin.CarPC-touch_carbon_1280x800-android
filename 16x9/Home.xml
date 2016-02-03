@@ -67,30 +67,8 @@
 	  
 	  <include>RadioTuneIn</include>
 	  <include>RadioDI</include>
-	  
-		
-		<control type="image">
-			<description>Normal Default Logo Image</description>
-			<posx>449</posx>
-			<posy>170</posy>
-			<width>383</width>
-			<height>343</height>
-			<aspectratio></aspectratio>
-			<texture>logo.png</texture>
-			<visible>![Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath))]</visible>
-			<include>Window_OpenClose_Animation_Zoom</include>
-		</control>
-		<control type="image">
-			<description>User Set Logo Image</description>
-			<posx>449</posx>
-			<posy>170</posy>
-			<width>383</width>
-			<height>343</height>
-			<aspectratio>scale</aspectratio>
-			<texture>$INFO[Skin.String(CustomLogoPath)]</texture>
-			<visible>Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath))</visible>
-			<include>Window_OpenClose_Animation_Zoom</include>
-		</control>
+      <include>Logo</include>
+	  <include>Visualisation</include>
 
 	
 		<control type="group" id="4250">
@@ -100,8 +78,8 @@
 			<include>VisibleFadeEffect</include>
 			<control type="button" id="4251">
 				<onup>Control.SetFocus(4241)</onup>
-                		<ondown>Control.SetFocus(4261)</ondown>
-                		<onleft>Control.SetFocus(4201)</onleft>
+                <ondown>Control.SetFocus(4261)</ondown>
+                <onleft>Control.SetFocus(4201)</onleft>
 				<description>Music Button</description>
 				<posx>0</posx>
 				<posy>0</posy>

@@ -287,6 +287,179 @@
 		</control>
 	</include>
 	
+
+		<include name="Visualisation">
+	    <control type="group" id="4226">
+	    	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonVisualisation) + Player.HasAudio + !Control.IsVisible(4225)</visible>
+			<visible>Player.HasAudio + Window.IsVisible(home)</visible>
+			<include>Window_OpenClose_Animation_Zoom</include>
+			<posx>449</posx>
+			<posy>175</posy>
+			<width>383</width>
+			<height>343</height>
+		<control type="visualisation" id="2">
+			<description>visualisation</description>
+			<posx>-30</posx>
+			<posy>-70</posy>
+			<width>440</width>
+			<height>440</height>
+			<fadetime>0</fadetime>
+		</control>
+		    <control type="label">
+                <visible>true</visible>
+                <posx>68</posx>
+			    <posy>35</posy>
+                <width>240</width>
+                <height>50</height>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <info>MusicPlayer.Artist</info>
+                <scroll>true</scroll>
+                <scrollspeed>50</scrollspeed>
+                <scrollsuffix> - </scrollsuffix>
+				<wrapmultiline>false</wrapmultiline>
+            </control>
+            <control type="label">
+                <visible>true</visible>
+                <posx>47</posx>
+			    <posy>65</posy>
+                <width>290</width>
+                <height>50</height>
+                <font>font13_title</font>
+                <textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <info>MusicPlayer.Title</info>
+				<scroll>true</scroll>
+                <scrollspeed>50</scrollspeed>
+                <scrollsuffix> - </scrollsuffix>
+				<wrapmultiline>false</wrapmultiline>
+            </control>
+            
+        <control type="group">
+            <posx>50</posx>
+			<posy>300</posy>
+			<control type="label">
+				<visible>true</visible>
+				<posx>125</posx>
+			    <posy>0</posy>
+                <width>100</width>
+                <height>50</height>
+				<font>font11</font>
+				<textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>right</align>
+				<label>[1]</label>
+				<info>MusicPlayer.Time</info>
+			</control>
+			<control type="label">
+				<visible>true</visible>
+				<posx>143</posx>
+			    <posy>0</posy>
+                <width>5</width>
+                <height>50</height>
+				<font>font11</font>
+				<textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+				<label>/</label>		
+			</control>
+			<control type="label">
+				<visible>true</visible>
+				<posx>160</posx>
+			    <posy>0</posy>
+                <width>100</width>
+                <height>50</height>
+				<font>font11</font>
+				<textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>left</align>
+				<label>[1]</label>
+				<info>MusicPlayer.Duration</info>
+			</control>
+			<!--<control type="label">
+				<description>Info Label Random</description>
+				<visible>true</visible>
+				<left>120</left>
+				<top>390</top>
+                <width>75</width>
+                <height>100</height>
+				<font>font11</font>
+				<textcolor>white</textcolor>
+				<label>Random</label>
+			</control>
+			<control type="label">
+				<description>Random Status</description>
+				<visible>true</visible>
+				<left>135</left>
+				<top>410</top>
+                <width>75</width>
+                <height>100</height>
+				<font>font11</font>
+				<textcolor>white</textcolor>
+				<label>Random</label>
+				<info>Playlist.Random</info>
+			</control>
+			<control type="label">
+				<description>Info Label Repeat</description>
+				<visible>true</visible>
+				<align>right</align>
+				<left>350</left>
+				<top>390</top>
+                <width>75</width>
+                <height>100</height>
+				<font>font11</font>
+				<textcolor>white</textcolor>
+				<label>Repeat</label>
+			</control>
+			<control type="label">
+				<description>Repeat Status</description>
+				<visible>true</visible>
+				<align>right</align>
+				<left>338</left>
+				<top>410</top>
+                <width>75</width>
+                <height>100</height>
+				<font>font11</font>
+				<textcolor>white</textcolor>
+				<label>Repeat</label>
+				<info>Playlist.Repeat</info>
+			</control>-->
+			</control>
+		 </control>     
+	</include>
+	
+ <include name="Logo">
+	<control type="group" id="4225">
+	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonLogo) + !Player.HasAudio + !Control.IsVisible(4226)</visible>
+	    <control type="image">
+			<description>Normal Default Logo Image</description>
+			<posx>449</posx>
+			<posy>170</posy>
+			<width>383</width>
+			<height>343</height>
+			<aspectratio></aspectratio>
+			<texture>logo.png</texture>
+			<visible>![Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath))]</visible>
+			<include>Window_OpenClose_Animation_Zoom</include>
+		</control>
+		<control type="image">
+			<description>User Set Logo Image</description>
+			<posx>449</posx>
+			<posy>170</posy>
+			<width>383</width>
+			<height>343</height>
+			<aspectratio>scale</aspectratio>
+			<texture>$INFO[Skin.String(CustomLogoPath)]</texture>
+			<visible>Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath))</visible>
+			<include>Window_OpenClose_Animation_Zoom</include>
+		</control>
+	</control>
+	</include>
+	
+	
 <include name="RadioTuneIn">
 	<control type="group" id="4230">
 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadioTuneIn) + !Control.IsVisible(4240)</visible>
@@ -370,7 +543,7 @@
 		</control>
 	</include>
 	
-	<include name="MusicPlayerTitle">
+	<!--<include name="MusicPlayerTitle">
 		<control type="group">
 			<include>Window_OpenClose_Animation_Slide_Up</include>
 			<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle)</visible>
@@ -405,7 +578,7 @@
                 <scrollsuffix> - </scrollsuffix>
             </control>
         </control>
-	</include>
+	</include>-->
 	<include name="RadioStationName">
 		<control type="group">
 			<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadioStationName)</visible>
@@ -505,7 +678,7 @@
                 <onup>Control.SetFocus()</onup>
                 <onleft>Control.SetFocus()</onleft>
                 <onright>Control.SetFocus()</onright>
-                <description>VolumDown</description>
+                <description>KB_minus</description>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>82</width>

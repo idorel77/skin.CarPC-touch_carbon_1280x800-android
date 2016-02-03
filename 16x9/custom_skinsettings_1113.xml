@@ -351,6 +351,19 @@
 				<onclick>Skin.ToggleSetting(HideHomeButtonIP)</onclick>
 				<selected>!Skin.HasSetting(HideHomeButtonIP)</selected>
 			</control>
+			<control type="radiobutton" id="207">
+				<description>Visualisation</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font24_title</font>
+				<focusedcolor>blue</focusedcolor>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>Show Your Visualisation instead logo when music play</label>
+				<onclick>Skin.ToggleSetting(HideHomeButtonVisualisation)</onclick>
+				<selected>!Skin.HasSetting(HideHomeButtonVisualisation)</selected>
+			</control>
 			
 			<!--<control type="label" id="205">
 				<height>50</height>
