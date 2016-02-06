@@ -300,7 +300,7 @@
 			</control>
 			
 			<control type="radiobutton" id="203">
-				<description>Button 3 Show Radio TuneIn</description>
+				<description>Button 3 Show Radio FM</description>
 				<height>55</height>
 				<width>920</width>
 				<font>font24_title</font>
@@ -308,9 +308,9 @@
 				<textcolor>black</textcolor>
 				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<label>Show Radio TuneIn Button 3</label>
-				<onclick>Skin.ToggleSetting(HideHomeButtonRadioTuneIn)</onclick>
-				<selected>!Skin.HasSetting(HideHomeButtonRadioTuneIn)</selected>
+				<label>Show Radio FM SDR Touch Button 3</label>
+				<onclick>Skin.ToggleSetting(HideHomeButtonRadioFM)</onclick>
+				<selected>!Skin.HasSetting(HideHomeButtonRadioFM)</selected>
 			</control>
 			<control type="radiobutton" id="204">
 				<description>Button 3 Show Radio DI</description>
