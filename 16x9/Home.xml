@@ -65,7 +65,7 @@
 	  <include>Maps</include>
 	  <include>Waze</include>
 	  
-	  <include>RadioTuneIn</include>
+	  <include>RadioFM</include>
 	  <include>RadioDI</include>
       <include>Logo</include>
 	  <include>Visualisation</include>
