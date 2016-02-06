@@ -5,7 +5,7 @@
   name="CarPC-touch_carbon_1280x800"
   provider-name="Dorel">
   <requires>
-    <import addon="xbmc.gui" version="5.3.0"/>
+    <import addon="xbmc.gui" version="5.10.0"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
@@ -16,7 +16,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">CarPC touch screen skin</summary>
-    <description lang="en">The skin is based on re-Touched skin(Jezz_X) modified by Dorel, Modified by DarkStar for Android Navigation = Google Maps, Radio = IHeartRadio</description>
+    <description lang="en">The skin is based on re-Touched skin(Jezz_X) modified by Dorel</description>
     <disclaimer lang="en">Use this skin with a touch screen or a mouse(the pointer is not being shown)</disclaimer>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
