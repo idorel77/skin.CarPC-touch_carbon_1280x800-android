@@ -460,9 +460,9 @@
 	</include>
 	
 	
-<include name="RadioTuneIn">
+<include name="RadioFM">
 	<control type="group" id="4230">
-		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadioTuneIn) + !Control.IsVisible(4240)</visible>
+		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadioFM) + !Control.IsVisible(4240)</visible>
 		<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>20</posx>
 			<posy>417</posy>
@@ -477,10 +477,10 @@
 				<height>117</height>
 				<texturenofocus >home_3.png</texturenofocus>
 				<texturefocus border="5">home_3_p.png</texturefocus>
-				<onclick>StartAndroidActivity("tunein.player")</onclick>
+				<onclick>StartAndroidActivity("marto.androsdr2")</onclick>
 			</control>
 			<control type="image">
-				<description>RadioTuneIn</description>
+				<description>RadioFM</description>
 				<posx>30</posx>
 				<posy>25</posy>
 				<width>80</width>
@@ -493,7 +493,7 @@
 				<posy>20</posy>
 				<height>81</height>
 				<width>270</width>
-				<label>Radio TI</label>
+				<label>Radio FM</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
